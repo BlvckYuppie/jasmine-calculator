@@ -41,3 +41,17 @@ describe( "exponent", function(){
     expect( product ).toBe( 8 );
   })
 })
+
+describe( "is greater than", function(){
+  it( "should return the larger of two arguments", function(){
+    var value = calculator.isGreaterThan( 5, 17 );
+    expect( value ).toBeGreaterThan( 5 );
+  })
+})
+
+describe( "is negative", function(){
+  it( "should return true if the argument is negative", function(){
+    var value = calculator.isNegative( -2 );
+    expect( value ).not.toBe( false );
+  })
+})

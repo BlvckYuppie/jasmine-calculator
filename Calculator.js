@@ -21,5 +21,21 @@ module.exports = {
 
   exponential: function( base, power ){
     return Math.pow( base, power );
+  },
+
+  isGreaterThan: function( val1, val2 ){
+    if( val1 > val2 ){
+      return val1;
+    } else if( val2 > val1 ) {
+      return val2;
+    }
+  },
+
+  isNegative: function( val ){
+    if( val < 0 ){
+      return true;
+    } else if ( val > 0 ){
+      return false;
+    }
   }
 }
