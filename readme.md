@@ -5,6 +5,7 @@
 ```
 git clone https://github.com/ga-wdi-exercises/jasmine-calculator
 npm install -g jasmine-node
+cd jasmine-calculator
 jasmine-node spec
 ```
 
